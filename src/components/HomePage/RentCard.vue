@@ -9,6 +9,8 @@
         ')',
       height: '55vh',
     }"
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
   >
     <button
       class="absolute text-white bg-blue-950 top-2 right-3 p-2 text-xs"
@@ -24,7 +26,8 @@
       </h1>
 
       <div
-        class="text-orange-200 flex justify-between w-2/3 mx-auto items-center text-xs"
+        v-if="!hover"
+        class="mb-4 text-orange-200 flex justify-between w-2/3 mx-auto items-center text-xs"
       >
         <span class="flex items-center">
           <svg
@@ -73,15 +76,26 @@
           {{ product.Area }}
         </span>
       </div>
-      <div>{{ product.price }}</div>
+      <div
+        v-if="hover"
+        data-aos="fade-up"
+        class="text-orange-200 text-center text-md py-2 mb-4"
+      >
+        {{ product.price }}
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   name: "RentCard",
   props: ["product"],
+  setup() {
+    const hover = ref(false);
+    return { hover };
+  },
 };
 </script>
 
