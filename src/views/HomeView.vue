@@ -1,18 +1,40 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <div class="flex">
+      <AsideList />
+      <CarouselComponent />
+    </div>
+    <div class="flex justify-around p-16">
+      <HomeValues />
+    </div>
+    <div>
+      <HomeDiscovery />
+    </div>
+    <UIDivider />
+    <HomeAbout />
+    <HomeServices />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import CarouselComponent from "@/components/Carousel/CarouselComponent.vue";
+import AsideList from "@/components/AsideList.vue";
+import HomeValues from "@/components/HomePage/HomeValues.vue";
+import HomeDiscovery from "@/components/HomePage/HomeDiscovery.vue";
+import HomeAbout from "@/components/HomePage/HomeAbout.vue";
+import UIDivider from "@/components/UI/DividerComponent.vue";
+import HomeServices from "@/components/HomePage/HomeServices.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    CarouselComponent,
+    AsideList,
+    HomeValues,
+    HomeDiscovery,
+    UIDivider,
+    HomeAbout,
+    HomeServices,
   },
 };
 </script>

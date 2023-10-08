@@ -1,0 +1,22 @@
+{
+  "discover-section": [
+    {
+      "id": "01",
+      "title": "Consultation",
+      "desc": "We begin by scheduling a personal consultation with you to understand your specific vision for your dream property.",
+      "src": "https://assets.website-files.com/64e88cc610ddff2adf2e9839/64e88cc610ddff2adf2e9866_brown-wooden-cabinet-near-green-and-white-table-p-800.jpeg"
+    },
+    {
+      "id": "02",
+      "title": "Property Tours",
+      "desc": "We begin by scheduling a personal consultation with you to understand your specific vision for your dream property.",
+      "src": "https://assets.website-files.com/64e88cc610ddff2adf2e9839/64e88cc610ddff2adf2e9867_black-and-white-throw-pillows-on-white-couch-p-800.jpeg"
+    },
+    {
+      "id": "03",
+      "title": "Acquisitions",
+      "desc": "We begin by scheduling a personal consultation with you to understand your specific vision for your dream property.",
+      "src": "https://assets.website-files.com/64e88cc610ddff2adf2e9839/64e88cc610ddff2adf2e9868_brown-tree-near-white-concrete-building-p-800.jpeg"
+    }
+  ]
+}
