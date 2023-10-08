@@ -54,10 +54,6 @@ export default {
     "dir",
     "imgLStyle",
   ],
-  //   setup(props) {
-  //     const images = ref(props.imgs.);
-  //     return { images };
-  //   },
 };
 </script>
 

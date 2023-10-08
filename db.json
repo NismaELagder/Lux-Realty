@@ -18,5 +18,47 @@
       "desc": "We begin by scheduling a personal consultation with you to understand your specific vision for your dream property.",
       "src": "https://assets.website-files.com/64e88cc610ddff2adf2e9839/64e88cc610ddff2adf2e9868_brown-tree-near-white-concrete-building-p-800.jpeg"
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "place": "BROOKLYN, NEW YORK",
+      "beds": 1,
+      "bath": 1,
+      "Area": "69,821 Sq Ft.",
+      "price": "$ 3,600.00 USD",
+      "purpose": "FOR RENT",
+      "img": "https://assets.website-files.com/64e88cc610ddff2adf2e9806/64e88cc610ddff2adf2e9930_black-and-gray-padded-armchair-beside-brown-wooden-table-p-800.jpeg"
+    },
+    {
+      "id": 2,
+      "place": "HOLLYWOOD, LOS ANGELES",
+      "beds": 2,
+      "bath": 2,
+      "Area": "97,458 Sq Ft.",
+      "price": "$ 4,900.00 USD",
+      "purpose": "FOR RENT",
+      "img": "https://assets.website-files.com/64e88cc610ddff2adf2e9806/64e88cc610ddff2adf2e992e_black-and-white-dining-table-and-chairs-p-800.jpeg"
+    },
+    {
+      "id": 3,
+      "place": "SAINT-LOUIS, PARIS",
+      "beds": 2,
+      "bath": 2,
+      "Area": "80,319 Sq Ft.",
+      "price": "$ 5,200.00 USD",
+      "purpose": "FOR RENT",
+      "img": "https://assets.website-files.com/64e88cc610ddff2adf2e9806/64e88cc610ddff2adf2e992d_living-room-with-brown-wooden-table-and-chairs-p-800.jpeg"
+    },
+    {
+      "id": 4,
+      "place": "SHIBUYA, TOKYO",
+      "beds": 2,
+      "bath": 2,
+      "Area": "55,609 Sq Ft.",
+      "price": "$ 989,000.00 USD",
+      "purpose": "FOR SALE",
+      "img": "https://assets.website-files.com/64e88cc610ddff2adf2e9806/64e88cc610ddff2adf2e992c_green-and-white-wooden-dining-table-and-chairs-p-800.jpeg"
+    }
   ]
 }

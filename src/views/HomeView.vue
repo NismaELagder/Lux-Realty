@@ -13,6 +13,8 @@
     <UIDivider />
     <HomeAbout />
     <HomeServices />
+    <UIDivider />
+    <RentSection />
   </div>
 </template>
 
@@ -24,6 +26,7 @@ import HomeDiscovery from "@/components/HomePage/HomeDiscovery.vue";
 import HomeAbout from "@/components/HomePage/HomeAbout.vue";
 import UIDivider from "@/components/UI/DividerComponent.vue";
 import HomeServices from "@/components/HomePage/HomeServices.vue";
+import RentSection from "@/components/HomePage/RentSection.vue";
 
 export default {
   name: "HomeView",
@@ -35,6 +38,7 @@ export default {
     UIDivider,
     HomeAbout,
     HomeServices,
+    RentSection,
   },
 };
 </script>
