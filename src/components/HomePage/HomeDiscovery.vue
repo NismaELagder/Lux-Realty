@@ -91,7 +91,7 @@ export default {
     onMounted(async () => {
       AOS.init();
       data.value = await fetch(
-        "http://localhost:5000/discover-section"
+        "https://lux-realty-db.onrender.com/discover-section"
       )
         .then((data) => data.json())
         .then((data) => data)

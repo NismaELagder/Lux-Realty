@@ -24,7 +24,9 @@ export default {
     let products = ref([]);
     let isMounted = ref(false);
     onMounted(async () => {
-      await fetch("http://localhost:5000/products")
+      await fetch(
+        "https://lux-realty-db.onrender.com/products"
+      )
         .then((data) => data.json())
         .then((data) => {
           isMounted.value = true;
