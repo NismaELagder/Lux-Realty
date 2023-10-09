@@ -31,9 +31,9 @@ export default {
         .then((data) => {
           isMounted.value = true;
           products.value = data;
-          return data;
-        })
-        .catch((err) => err.message);
+          // return data;
+        });
+      // .catch((err) => err.message);
     });
 
     return { products, isMounted };

@@ -10,6 +10,13 @@ module.exports = {
         Barlow: "Barlow",
         Gilda: "'Gilda Display', serif",
       },
+      letterSpacing: {
+        widest: ".5em",
+      },
+      backgroundImage: {
+        greyGradient:
+          "linear-gradient(90deg ,#fff, #313953)",
+      },
     },
   },
   plugins: [],
