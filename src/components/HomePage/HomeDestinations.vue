@@ -1,4 +1,4 @@
-<template class="">
+<template>
   <div class="text-center pt-32">
     <h3
       class="text-orange-200 tracking-widest text-md mb-4"
@@ -31,7 +31,11 @@
       class="min-w-[41.67%] ml-20 relative left-0"
       ref="carousel"
     >
-      <DestinationCard v-if="isMounted" :data="item" />
+      <DestinationCard
+        v-if="isMounted"
+        :data="item"
+        data-aos="fade-left"
+      />
     </div>
     <div class="btns absolute bottom-0 left-8">
       <!-- <button @click="prevHandler()">
@@ -70,10 +74,12 @@
 import { ref, onMounted } from "vue";
 import ButtonComponent from "../UI/ButtonComponent.vue";
 import DestinationCard from "./DestinationCard.vue";
+import AOS from "aos";
 export default {
   name: "HomeDestinations",
   components: { ButtonComponent, DestinationCard },
   setup() {
+    AOS.init();
     const destinations = ref(null);
     const isMounted = ref(false);
     const carousel = ref(null);

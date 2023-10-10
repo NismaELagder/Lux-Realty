@@ -16,6 +16,7 @@
     <UIDivider />
     <RentSection />
     <HomeDestinations />
+    <CustomerSatisfaction />
   </div>
 </template>
 
@@ -29,7 +30,7 @@ import UIDivider from "@/components/UI/DividerComponent.vue";
 import HomeServices from "@/components/HomePage/HomeServices.vue";
 import RentSection from "@/components/HomePage/RentSection.vue";
 import HomeDestinations from "@/components/HomePage/HomeDestinations.vue";
-
+import CustomerSatisfaction from "@/components/CustomerSatisfaction.vue";
 export default {
   name: "HomeView",
   components: {
@@ -42,6 +43,7 @@ export default {
     HomeServices,
     RentSection,
     HomeDestinations,
+    CustomerSatisfaction,
   },
 };
 </script>
