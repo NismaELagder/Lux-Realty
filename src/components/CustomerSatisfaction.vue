@@ -24,7 +24,11 @@
       </button>
     </div>
 
-    <div class="w-1/2 flex justify-end" id="img">
+    <div
+      class="w-1/2 flex justify-end"
+      id="img"
+      data-aos="zoom-out"
+    >
       <img
         src="https://assets.website-files.com/64e88cc610ddff2adf2e9839/64e88cc610ddff2adf2e9883_a-chair-in-a-room-Square-p-1080.jpg"
         alt=""
@@ -35,8 +39,12 @@
 </template>
 
 <script>
+import AOS from "aos";
 export default {
   name: "CustomerSatisfaction",
+  setup() {
+    AOS.init();
+  },
 };
 </script>
 
