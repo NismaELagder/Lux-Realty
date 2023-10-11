@@ -17,7 +17,11 @@ module.exports = {
         greyGradient:
           "linear-gradient(90deg ,#fff, #313953)",
       },
+      backgroundColor: {
+        darkBlue: "#1C2745",
+      },
     },
   },
+
   plugins: [],
 };

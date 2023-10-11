@@ -35,7 +35,7 @@
         <div class="nums w-1/6">
           <div class="text-white pb-3">
             <p
-              class="p-5 bg-blue-900 rounded-t-full rounded-b-md w-1/2 text-center border-orange-200 border-solid border-x border-y"
+              class="p-5 bg-blue-950 rounded-t-full rounded-b-md w-1/2 text-center border-orange-200 border-solid border-x border-y"
             >
               {{ item["id"] }}
             </p>

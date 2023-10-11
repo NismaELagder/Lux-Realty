@@ -18,6 +18,7 @@
     <HomeDestinations />
     <CustomerSatisfaction />
     <CustomerExperience />
+    <BlogSection />
   </div>
 </template>
 
@@ -33,6 +34,8 @@ import RentSection from "@/components/HomePage/RentSection.vue";
 import HomeDestinations from "@/components/HomePage/HomeDestinations.vue";
 import CustomerSatisfaction from "@/components/CustomerSatisfaction.vue";
 import CustomerExperience from "@/components/ClientExperience.vue";
+import BlogSection from "@/components/HomePage/BlogSection.vue";
+
 export default {
   name: "HomeView",
   components: {
@@ -47,6 +50,7 @@ export default {
     HomeDestinations,
     CustomerSatisfaction,
     CustomerExperience,
+    BlogSection,
   },
 };
 </script>

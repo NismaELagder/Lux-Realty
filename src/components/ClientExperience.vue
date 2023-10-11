@@ -23,7 +23,7 @@
           @click="reviewHandler($event)"
           :review="client?.review"
           @click.stop="reviewHandler($event)"
-          class="flex items-center bg-blue-900 py-6 px-12"
+          class="flex items-center bg-blue-950 py-6 px-12"
         >
           <img
             :src="client?.img"
@@ -37,7 +37,7 @@
           </p>
         </div>
       </div>
-      <div class="pt-12 px-16 bg-blue-900 w-2/3">
+      <div class="pt-12 px-16 bg-blue-950 w-2/3">
         <div class="flex justify-between items-end h-1/3">
           <span>
             <img

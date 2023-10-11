@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col w-52 ml-10 h-full py-2 items-center bg-blue-900"
+    class="flex flex-col w-52 ml-10 h-full py-2 items-center bg-blue-950"
   >
     <img
       src="https://assets.website-files.com/64e88cc610ddff2adf2e9839/64ead6074443d94759bfd7fa_Logo.png"
