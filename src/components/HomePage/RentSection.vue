@@ -15,7 +15,7 @@
 <script>
 import RentCard from "./RentCard.vue";
 import { ref, onMounted } from "vue";
-
+import getData from "@/components/Composable/getData";
 export default {
   name: "RentSection",
   components: { RentCard },
@@ -23,18 +23,24 @@ export default {
   setup() {
     let products = ref([]);
     let isMounted = ref(false);
-    onMounted(async () => {
-      await fetch(
-        "https://lux-realty-db.onrender.com/products"
+    // onMounted(async () => {
+    //   await fetch(
+    //     "https://lux-realty-db.onrender.com/products"
+    //   )
+    //     .then((data) => data.json())
+    //     .then((data) => {
+    //       isMounted.value = true;
+    //       products.value = data;
+    //     });
+    // });
+    onMounted(() =>
+      getData(
+        "https://lux-realty-db.onrender.com/products",
+        true,
+        products,
+        isMounted
       )
-        .then((data) => data.json())
-        .then((data) => {
-          isMounted.value = true;
-          products.value = data;
-          // return data;
-        });
-      // .catch((err) => err.message);
-    });
+    );
 
     return { products, isMounted };
   },

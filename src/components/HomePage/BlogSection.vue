@@ -7,14 +7,14 @@
         BLOG
       </h3>
       <h1
-        class="text-white text-5xl font-Gilda tracking-tight"
+        class="text-white text-4xl font-Gilda tracking-tight"
       >
         OUR NEWS & INSIGHTS
       </h1>
     </div>
     <div
       v-if="IsMounted"
-      class="flex justify-between py-16"
+      class="flex justify-between pt-16 pb-12"
     >
       <BlogCard
         :data="item"

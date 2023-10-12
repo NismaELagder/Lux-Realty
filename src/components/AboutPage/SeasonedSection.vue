@@ -1,5 +1,5 @@
 <template>
-  <div class="w-11/12 mx-auto pt-16">
+  <div class="w-10/12 mx-auto pt-16">
     <div class="w-5/12 pb-12">
       <h3
         class="text-sm text-orange-200 font-Barlow tracking-widest"
