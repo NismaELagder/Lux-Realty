@@ -1,5 +1,13 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <TitleSection />
 </template>
+
+<script>
+import TitleSection from "@/components/AboutPage/TitleSection.vue";
+export default {
+  name: "AboutView",
+  components: { TitleSection },
+};
+</script>
+
+<style scoped></style>

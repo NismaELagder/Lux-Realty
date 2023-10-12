@@ -7,15 +7,15 @@
     <div class="flex justify-around p-16">
       <HomeValues />
     </div>
-    <div>
-      <HomeDiscovery />
-    </div>
+    <HomeDiscovery />
     <UIDivider />
     <HomeAbout />
     <HomeServices />
     <UIDivider />
     <RentSection />
+
     <HomeDestinations />
+
     <CustomerSatisfaction />
     <CustomerExperience />
     <BlogSection />

@@ -1,8 +1,10 @@
 <template>
-  <div class="flex justify-between ml-20 mt-16 p">
+  <div
+    class="flex justify-between ml-auto mr-4 w-11/12 mt-16"
+  >
     <div
       id="content"
-      class="flex flex-col justify-center border-solid border-r-[1px] w-1/2 border-slate-300 mr-1"
+      class="flex flex-col justify-center border-solid border-r-[1px] border-slate-300 w-1/2 pr-1"
     >
       <img
         src="https://assets.website-files.com/64e88cc610ddff2adf2e9839/64ead6074443d94759bfd7fa_Logo.png"
@@ -25,14 +27,14 @@
     </div>
 
     <div
-      class="w-1/2 flex justify-end"
+      class="w-1/2"
       id="img"
-      data-aos="zoom-out"
+      data-aos="zoom-in"
+      data-aos-duration="2.2s"
     >
       <img
         src="https://assets.website-files.com/64e88cc610ddff2adf2e9839/64e88cc610ddff2adf2e9883_a-chair-in-a-room-Square-p-1080.jpg"
         alt=""
-        class="w-5/6"
       />
     </div>
   </div>

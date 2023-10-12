@@ -2,7 +2,7 @@
   <div class="w-5/6 m-auto pt-32">
     <div class="head">
       <h3
-        class="text-orange-200 tracking-widest text-md mb-4"
+        class="text-orange-200 tracking-widest text-sm mb-4"
       >
         BLOG
       </h3>
