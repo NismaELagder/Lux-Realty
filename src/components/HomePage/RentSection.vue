@@ -7,7 +7,7 @@
       v-for="(item, i) in products"
       :key="i"
     >
-      <RentCard v-if="isMounted" :product="item" />
+      <RentCard v-if="isMounted && i < 4" :product="item" />
     </div>
   </div>
 </template>

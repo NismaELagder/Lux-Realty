@@ -18,13 +18,13 @@
 
     <CustomerSatisfaction />
     <CustomerExperience />
-    <BlogSection />
+    <BlogSection :length="2" />
   </div>
 </template>
 
 <script>
 import CarouselComponent from "@/components/Carousel/CarouselComponent.vue";
-import AsideList from "@/components/AsideList.vue";
+import AsideList from "@/components/HomePage/AsideList.vue";
 import HomeValues from "@/components/HomePage/HomeValues.vue";
 import HomeDiscovery from "@/components/HomePage/HomeDiscovery.vue";
 import HomeAbout from "@/components/HomePage/HomeAbout.vue";

@@ -27,7 +27,10 @@
     />
   </div>
   <button
-    class="bg-orange-200 text-blue-950 px-3 py-3 my-8 mx-auto max-w-2/12 block text-sm"
+    :class="[
+      hide ? 'hidden' : '',
+      'bg-orange-200 text-blue-950 px-3 py-3 my-8 mx-auto max-w-2/12 block text-sm',
+    ]"
   >
     VIEW ALL AGENTS
   </button>
@@ -53,6 +56,7 @@ export default {
     return { IsMounted, team };
   },
   components: { TeamMember },
+  props: ["hide"],
 };
 </script>
 

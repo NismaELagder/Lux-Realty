@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="p-32 pb-16 mt-16 flex justify-between bg-[#161B2B]"
-  >
+  <div class="p-32 pb-16 flex justify-between bg-[#161B2B]">
     <div class="logo w-1/3">
       <div class="flex">
         <img

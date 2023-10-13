@@ -17,9 +17,9 @@
       class="flex justify-between pt-16 pb-12"
     >
       <BlogCard
-        :data="item"
-        v-for="item in data"
-        :key="item['id']"
+        :data="data[i]"
+        v-for="(item, i) in dataLength"
+        :key="i"
       />
     </div>
   </div>
@@ -31,19 +31,32 @@ import BlogCard from "./BlogCard.vue";
 export default {
   name: "BlogSection",
   components: { BlogCard },
-  setup() {
+  props: ["length"],
+  setup(props) {
     const data = ref([]);
     const IsMounted = ref(false);
+    const dataLength = ref(2);
+
     onMounted(() => {
       fetch("https://lux-realty-db.onrender.com/Insights")
         .then((data) => data.json())
         .then((result) => {
           data.value = result;
           IsMounted.value = true;
+          props.length == "full"
+            ? ref(data.value.length)
+            : ref(props.length);
+          console.log(dataLength.value);
         });
     });
 
-    return { data, IsMounted };
+    // const dataLength = ref(
+    //   props.length == "full"
+    //     ? data.value.length
+    //     : props.length
+    // );
+
+    return { data, IsMounted, dataLength };
   },
 };
 </script>
