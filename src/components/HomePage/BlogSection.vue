@@ -14,7 +14,7 @@
     </div>
     <div
       v-if="IsMounted"
-      class="flex justify-between pt-16 pb-12"
+      class="flex justify-between pt-16 pb-12 flex-wrap"
     >
       <BlogCard
         :data="data[i]"
@@ -35,7 +35,7 @@ export default {
   setup(props) {
     const data = ref([]);
     const IsMounted = ref(false);
-    const dataLength = ref(2);
+    const dataLength = ref(0);
 
     onMounted(() => {
       fetch("https://lux-realty-db.onrender.com/Insights")
@@ -44,8 +44,8 @@ export default {
           data.value = result;
           IsMounted.value = true;
           props.length == "full"
-            ? ref(data.value.length)
-            : ref(props.length);
+            ? (dataLength.value = data.value.length)
+            : (dataLength.value = 2);
           console.log(dataLength.value);
         });
     });

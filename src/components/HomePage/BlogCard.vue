@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[48%] bg-blue-950">
+  <div class="w-[48%] bg-blue-950 mb-8">
     <div class="relative">
       <img :src="data['img']" alt="" />
       <p
