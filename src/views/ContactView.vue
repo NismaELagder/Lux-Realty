@@ -1,17 +1,24 @@
 <template>
   <div class="px-8 pt-48 bg-[#111B37]">
-    <p
-      class="text-white text-center font-Gilda text-7xl italic py-20"
-    >
-      Soon...
-    </p>
+    <ContactForm />
+    <ReachToUs />
+    <CustomerSatisfaction />
   </div>
 </template>
 
 <script>
+import ContactForm from "@/components/ContactPage/ContactForm.vue";
+import ReachToUs from "@/components/ContactPage/ReachToUs.vue";
+import CustomerSatisfaction from "@/components/CustomerSatisfaction.vue";
 export default {
   name: "ContactView",
+  components: {
+    ContactForm,
+    ReachToUs,
+    CustomerSatisfaction,
+  },
 };
 </script>
 
 <style></style>
+, CustomerSatisfaction
