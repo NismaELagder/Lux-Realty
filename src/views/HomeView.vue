@@ -4,7 +4,9 @@
       <AsideList />
       <CarouselComponent />
     </div>
-    <div class="flex justify-around p-16">
+    <div
+      class="flex md:flex-row flex-col items-center justify-center md:justify-around p-16"
+    >
       <HomeValues />
     </div>
     <HomeDiscovery />

@@ -1,13 +1,13 @@
 <template>
   <div
-    class="carousel w-5/6 h-screen flex justify-between items-center px-5"
+    class="carousel w-full lg:w-5/6 h-screen flex justify-between items-center px-5"
     ref="carousel"
     :style="{ 'background-image': srcs[0].src }"
     :id="0"
     data-aos="zoom-in-down"
   >
     <button
-      class="border-slate-50 border-solid border-x border-y p-10 rounded-full hover:bg-blue-950"
+      class="border-slate-50 border-solid border-x border-y p-10 rounded-full hover:bg-blue-950 hidden lg:block"
       ref="prevBtn"
       @click="carouselPrevHandler()"
     >
@@ -25,7 +25,7 @@
     </button>
     <div
       id="content"
-      class="w-7/12 text-center text-white font-Gilda"
+      class="lg:w-7/12 w-full text-center text-white font-Gilda"
     >
       <h1 class="text-7xl mb-6">{{ title }}</h1>
       <p class="text-2xl">{{ desc }}</p>
@@ -34,7 +34,7 @@
       ></ButtonComponent>
     </div>
     <button
-      class="border-slate-50 border-solid border-x border-y p-10 rounded-full hover:bg-blue-950"
+      class="border-slate-50 border-solid border-x border-y p-10 rounded-full hover:bg-blue-950 hidden lg:block"
       ref="nextBtn"
       @click="carouselNextHandler()"
     >

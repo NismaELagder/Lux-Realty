@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex flex-col items-center text-center w-1/2 m-auto my-8"
+      class="flex flex-col items-center text-center w-4/5 md:w-1/2 m-auto my-8"
     >
       <h3
         class="tracking-widest font-Barlow mb-4 text-orange-200"
@@ -16,7 +16,7 @@
         alt="logo"
         class="w-2/10 h-16 my-4"
       />
-      <p class="text-3xl font-Gilda text-white">
+      <p class="md:text-3xl text-2xl font-Gilda text-white">
         Our agency has access to an extensive network of
         luxury listings, ensuring that you have access to
         the finest properties in prime locations.
@@ -35,7 +35,7 @@
         <div class="nums w-1/6">
           <div class="text-white pb-3">
             <p
-              class="p-5 bg-blue-950 rounded-t-full rounded-b-md w-1/2 text-center border-orange-200 border-solid border-x border-y"
+              class="p-5 bg-blue-950 rounded-t-full rounded-b-md md:w-1/2 w-2/3 text-center border-orange-200 border-solid border-x border-y"
             >
               {{ item["id"] }}
             </p>
@@ -43,7 +43,7 @@
         </div>
         <div class="content w-5/6">
           <div
-            class="img border-s-2 border-solid border-orange-200 pl-12"
+            class="img border-s-2 border-solid border-orange-200 pl-12 w-full"
           >
             <img
               :src="item.src"
@@ -52,7 +52,10 @@
               data-aos-duration="2s"
             />
           </div>
-          <div v-if="item['id'] % 2 == 0" class="flex my-8">
+          <div
+            v-if="item['id'] % 2 == 0"
+            class="flex my-8 flex-wrap"
+          >
             <p
               class="text-md border-solid border-e-2 px-4 border-orange-200 text-slate-400 font-Barlow"
             >
@@ -64,7 +67,10 @@
               {{ item["title"] }}
             </h2>
           </div>
-          <div v-else class="flex my-8">
+          <div
+            v-else
+            class="flex my-8 w-full md:w-auto flex-wrap"
+          >
             <h2
               class="text-3xl w-1/3 px-6 text-white font-Gilda"
             >

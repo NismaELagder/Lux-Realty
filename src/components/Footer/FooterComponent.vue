@@ -1,6 +1,10 @@
 <template>
-  <div class="p-32 pb-16 flex justify-between bg-[#161B2B]">
-    <div class="logo w-1/3">
+  <div
+    class="md:p-32 pb-16 flex justify-between flex-col md:flex-row bg-[#161B2B]"
+  >
+    <div
+      class="logo md:w-1/3 w-11/12 mx-auto md:mx-0 py-4 md:py-0"
+    >
       <div class="flex">
         <img
           src="https://assets.website-files.com/64e88cc610ddff2adf2e9839/64ead6074443d94759bfd7fa_Logo.png"
@@ -21,7 +25,7 @@
         </div>
       </div>
       <p
-        class="text-lg text-slate-500 w-5/6 mb-4 text-Barlow"
+        class="md:text-lg text-sm text-slate-500 w-2/3 md:w-5/6 mb-4 text-Barlow"
       >
         Our portfolio includes exquisite properties nestled
         in prime locations renowned for their desirability.
@@ -77,46 +81,61 @@
           </svg>
         </router-link>
       </div>
-      <!-- <p class="text-slate-500 mt-4">
-        &copy; 2023 LuxRealty. All Rights Reserved.
-      </p> -->
     </div>
-    <div class="addresses flex justify-between w-7/12">
-      <address>
-        <h3 class="text-xl text-bold text-white pb-3">
+    <div
+      class="addresses flex justify-between md:w-7/12 w-11/12 mx-auto md:mx-0"
+    >
+      <address class="md:w-auto">
+        <h3 class="md:text-2xl text-bold text-white pb-3">
           Explore
         </h3>
         <ul>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">Listings</router-link>
           </li>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">Agents</router-link>
           </li>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">About</router-link>
           </li>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">Contact</router-link>
           </li>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">Blog</router-link>
           </li>
         </ul>
       </address>
-      <address>
-        <h3 class="text-xl text-bold text-white pb-3">
+      <address class="md:w-auto">
+        <h3 class="md:text-2xl text-bold text-white pb-3">
           Utilities
         </h3>
         <ul>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">Design Source</router-link>
           </li>
 
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">Instructions</router-link>
           </li>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">Licenses</router-link>
           </li>
           <li class="text-white font-Barlow">
@@ -128,15 +147,19 @@
         </ul>
       </address>
       <address class="w-1/3">
-        <h3 class="text-xl text-bold text-white pb-3">
+        <h3 class="md:text-2xl text-bold text-white pb-3">
           Contact
         </h3>
         <ul>
-          <li class="text-slate-500 font-Barlow">
+          <li
+            class="text-slate-500 font-Barlow md:text-base text-sm"
+          >
             XYZ Times faSquare, New York, 10036, United
             States
           </li>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +176,9 @@
               +123 456789</router-link
             >
           </li>
-          <li class="text-white font-Barlow">
+          <li
+            class="text-white font-Barlow md:text-base text-sm"
+          >
             <router-link to="">
               <svg
                 class="inline pr-2"

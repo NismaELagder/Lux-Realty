@@ -12,9 +12,11 @@
         Client Experiences
       </h1>
     </div>
-    <div class="clients flex justify-between w-4/6 m-auto">
+    <div
+      class="clients flex justify-between md:w-4/6 w-11/12 m-auto flex-col md:flex-row"
+    >
       <div
-        class="w-1/4 flex flex-col justify-between"
+        class="md:w-1/4 w-full flex md:flex-col justify-between"
         @click.stop
       >
         <div
@@ -23,21 +25,23 @@
           @click="reviewHandler($event)"
           :review="client?.review"
           @click.stop="reviewHandler($event)"
-          class="flex items-center bg-blue-950 py-6 px-12"
+          class="flex items-center bg-blue-950 md:py-6 px-12 mb-4 md:m-auto w-[33%] md:w-auto"
         >
           <img
             :src="client?.img"
             alt=""
-            class="rounded-full w-1/4 mr-4"
+            class="rounded-full w-1/3 md:w-1/4 mr-4"
           />
           <p
-            class="text-md tracking-wider w-1/2 text-orange-200"
+            class="md:text-base text-[11px] tracking-wider w-1/2 text-orange-200"
           >
             {{ client?.name }}
           </p>
         </div>
       </div>
-      <div class="pt-12 px-16 bg-blue-950 w-2/3">
+      <div
+        class="pt-12 pb-16 md:pb-0 px-16 bg-blue-950 md:w-2/3 w-full"
+      >
         <div class="flex justify-between items-end h-1/3">
           <span>
             <img

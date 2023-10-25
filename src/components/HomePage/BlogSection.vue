@@ -50,12 +50,6 @@ export default {
         });
     });
 
-    // const dataLength = ref(
-    //   props.length == "full"
-    //     ? data.value.length
-    //     : props.length
-    // );
-
     return { data, IsMounted, dataLength };
   },
 };

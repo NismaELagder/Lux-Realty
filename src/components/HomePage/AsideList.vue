@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="w-52 flex flex-col justify-center items-center bg-blue-950"
+    class="w-52 flex-col justify-center items-center bg-blue-950 lg:flex hidden"
   >
     <router-link to="" class="mb-4"
       ><svg
