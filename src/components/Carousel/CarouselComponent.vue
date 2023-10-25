@@ -1,6 +1,6 @@
 <template>
   <div
-    class="carousel w-full lg:w-5/6 h-screen flex justify-between items-center px-5"
+    class="carousel w-full lg:w-5/6 h-screen flex justify-between items-center px-5 md:pt-0 `"
     ref="carousel"
     :style="{ 'background-image': srcs[0].src }"
     :id="0"
@@ -25,7 +25,7 @@
     </button>
     <div
       id="content"
-      class="lg:w-7/12 w-full text-center text-white font-Gilda"
+      class="lg:w-7/12 w-full text-center text-white font-Gilda pt-[30vh] md:pt-0"
     >
       <h1 class="text-7xl mb-6">{{ title }}</h1>
       <p class="text-2xl">{{ desc }}</p>

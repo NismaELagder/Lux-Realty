@@ -8,7 +8,9 @@
       >
         DISCOVER
       </h3>
-      <h1 class="text-5xl font-Gilda text-white">
+      <h1
+        class="md:text-5xl text-2xl font-Gilda text-white"
+      >
         The World Of Luxury
       </h1>
       <img
@@ -16,7 +18,7 @@
         alt="logo"
         class="w-2/10 h-16 my-4"
       />
-      <p class="md:text-3xl text-2xl font-Gilda text-white">
+      <p class="md:text-3xl text-lg font-Gilda text-white">
         Our agency has access to an extensive network of
         luxury listings, ensuring that you have access to
         the finest properties in prime locations.
@@ -24,7 +26,7 @@
     </div>
 
     <div
-      class="discoverValues my-14 w-4/6 m-auto"
+      class="discoverValues my-14 md:w-4/6 w-11/12 m-auto"
       v-if="data"
     >
       <div
@@ -35,7 +37,7 @@
         <div class="nums w-1/6">
           <div class="text-white pb-3">
             <p
-              class="p-5 bg-blue-950 rounded-t-full rounded-b-md md:w-1/2 w-2/3 text-center border-orange-200 border-solid border-x border-y"
+              class="md:p-5 py-5 bg-blue-950 rounded-t-full rounded-b-md md:w-1/2 w-2/3 md:text-base text-xs text-center border-orange-200 border-solid border"
             >
               {{ item["id"] }}
             </p>
@@ -43,13 +45,14 @@
         </div>
         <div class="content w-5/6">
           <div
-            class="img border-s-2 border-solid border-orange-200 pl-12 w-full"
+            class="img border-s-2 border-solid border-orange-200 pl-2 md:pl-12"
           >
             <img
               :src="item.src"
               alt=""
               data-aos="fade-up"
               data-aos-duration="2s"
+              class="md:w-auto w-full"
             />
           </div>
           <div
@@ -57,12 +60,12 @@
             class="flex my-8 flex-wrap"
           >
             <p
-              class="text-md border-solid border-e-2 px-4 border-orange-200 text-slate-400 font-Barlow"
+              class="text-md border-solid md:border-e-2 px-4 border-orange-200 text-slate-400 font-Barlow"
             >
               {{ item["desc"] }}
             </p>
             <h2
-              class="text-3xl w-1/2 ps-6 text-white font-Gilda"
+              class="text-3xl md:w-1/2 md:ps-6 ps-4 mt-3 text-white font-Gilda"
             >
               {{ item["title"] }}
             </h2>
@@ -77,7 +80,7 @@
               {{ item["title"] }}
             </h2>
             <p
-              class="text-md border-solid border-s-2 px-4 border-orange-200 text-slate-400 font-Barlow"
+              class="text-md border-solid border-s-2 px-4 mt-3 border-orange-200 text-slate-400 font-Barlow"
             >
               {{ item["desc"] }}
             </p>

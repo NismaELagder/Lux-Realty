@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-between absolute w-full z-10">
+  <div
+    class="flex justify-between absolute w-full z-10 md:bg-transparent bg-blue-900 h-[13vh] md:h-[25vh]"
+  >
     <LogoComponent />
     <NavbarComponent />
   </div>
@@ -14,8 +16,4 @@ export default {
 };
 </script>
 
-<style scoped>
-div {
-  height: 25vh;
-}
-</style>
+<style scoped></style>

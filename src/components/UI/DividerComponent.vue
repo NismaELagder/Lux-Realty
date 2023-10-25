@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-2/6 m-auto py-8 flex items-center justify-between"
+    class="md:w-1/3 w-1/2 m-auto py-8 flex items-center justify-between"
   >
     <hr
       class="w-1/3 border-orange-200"

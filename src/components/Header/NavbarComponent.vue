@@ -1,38 +1,35 @@
 <template>
-  <!-- <div
-    class="h-2/6 flex justify-between pr-32 items-center"
-  > -->
   <nav
-    class="flex justify-between pr-32 items-center w-1/2"
+    class="flex justify-between md:pr-32 items-center md:w-1/2 w-5/6 px-2 py-0 p-[30px]"
   >
     <router-link
       :to="{ name: 'home' }"
-      class="hover:text-orange-300 text-xs font-Barlow"
+      class="hover:text-orange-300 md:text-xs text-[10px] font-Barlow"
       >HOME</router-link
     >
     <router-link
       :to="{ name: 'about' }"
-      class="hover:text-orange-300 text-xs font-Barlow"
+      class="hover:text-orange-300 md:text-xs text-[10px] font-Barlow"
       >ABOUT US</router-link
     >
     <router-link
       :to="{ name: 'listings' }"
-      class="hover:text-orange-300 text-xs font-Barlow"
+      class="hover:text-orange-300 md:text-xs text-[10px] font-Barlow"
       >LISTINGS</router-link
     >
     <router-link
       :to="{ name: 'agents' }"
-      class="hover:text-orange-300 text-xs font-Barlow"
+      class="hover:text-orange-300 md:text-xs text-[10px] font-Barlow"
       >AGENTS</router-link
     >
     <router-link
       :to="{ name: 'blogs' }"
-      class="hover:text-orange-300 text-xs font-Barlow"
+      class="hover:text-orange-300 md:text-xs text-[10px] font-Barlow"
       >BLOGS</router-link
     >
     <router-link
       :to="{ name: 'contact' }"
-      class="hover:text-orange-300 text-xs font-Barlow"
+      class="hover:text-orange-300 md:text-xs text-[10px] font-Barlow"
       >CONTACT US</router-link
     >
     <button

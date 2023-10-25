@@ -1,6 +1,9 @@
 <template>
-  <div class="w-5/6 ml-24 flex justify-between" :dir="dir">
-    <div class="imgs w-1/2 flex justify-between">
+  <div
+    class="md:w-5/6 md:ml-24 w-11/12 mx-auto md:mr-0 flex justify-between flex-wrap"
+    :dir="dir"
+  >
+    <div class="imgs md:w-1/2 flex justify-between w-full">
       <img :src="imgL" alt="" class="w-5/12 leftImg" />
       <img
         :src="imgR"
@@ -10,30 +13,22 @@
       />
     </div>
     <div
-      class="content w-1/2 ps-8 flex justify-center flex-col"
+      class="content md:w-1/2 md:ps-8 flex justify-center text-center md:text-left my-8 md:my-0 flex-col w-full"
     >
-      <!-- <h3 class="text-orange-200 mb-4 ps-8">ABOUT US</h3> -->
-      <h3 class="text-orange-200 mb-4 ps-8">
+      <h3 class="text-orange-200 md:mb-4 md:ps-8">
         {{ SectionTitle }}
       </h3>
 
-      <!-- <h1 class="text-white font-Gilda text-3xl mb-2">
-        Luxury Houses with Quality Comfort
-      </h1> -->
       <h1 class="text-white font-Gilda text-3xl mb-2">
         {{ Slogan }}
       </h1>
-      <!-- <p class="text-slate-400 font-Barlow text-lg">
-        Experience the epitome of luxury living with our
-        exceptional collection of houses that offer
-        unparalleled comfort.
-      </p> -->
+
       <p class="text-slate-400 font-Barlow text-lg">
         {{ Caption }}
       </p>
       <ButtonComponent
         :BtnTxt="'LEARN MORE'"
-        class="text-white w-1/3 px-0"
+        class="text-white md:w-1/3 w-1/2 mx-auto md:mx-0 px-0"
       />
     </div>
   </div>
